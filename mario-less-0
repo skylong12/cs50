@@ -1,0 +1,9 @@
+int x;
+
+int main(void)
+{
+    do
+    {
+     x = get_int("height:");
+    }
+    while(x < 1 || x > 8);
