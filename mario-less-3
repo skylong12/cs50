@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int x;
+
+int main(void)
+{
+    do
+    {
+     x = get_int("height:");
+    }
+    while(x < 1 || x > 8);
+
+    for(int i = 0; i < x; i++)
+    {
+       for(int k = 0; k <= x-i; k++)
+       {
+           for(int j = 0; j == k; j++)
+           {
+               printf("#");
+           }
+           printf(".");
+       }
+    }
+}
