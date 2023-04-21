@@ -38,7 +38,7 @@ int main(void)
 int get_cents(void)
 {
     // TODO
-    int a = get_int("cents");
+    int a = get_int("cents:");
     return a;
 }
 
