@@ -37,9 +37,9 @@ int compute_score(string word)
 {
     // TODO
     int score = 0;
-    for (int i = 0, n = strlen(word); i < n; i++)
+    for (int i = 0, n = strlen(word); i < n; i++) 
     {
-        if (islower(word[i]) || isupper(word[i]))
+        if (islower(word[i]) || isupper(word[i]))    //if (isalpha(word[i]))
         {
             int num = toupper(word[i]) - 'A';
             score += POINTS[num];
