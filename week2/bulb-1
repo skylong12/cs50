@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+
+string tobinary(int n);
+
+int main(void)
+{
+    string text = get_string("");
+    int decimal [strlen(text)];
+    for(int i = 0; i < strlen(text); i++)
+    {
+         decimal[i] = text[i];
+         string binary = tobinary(decimal[i]); //把字符的十进制ascii码转为二进制字符串
+         
+         for(int i  = strlen(binary); i < 8; i++)
+         {
+              print_bulb(0);
+         }
+         for(int j = 0; j < strlen(binary); j++)
+         {
+               print_bulb(binary[j]);
+         }    
+         printf("\n");   
+    }
+}
+
+
+string tobinay（int n）
+{
+    int sum = 0;
+    int y, x = 1;
+    whlie(n != 0)
+   {
+       y = n % 2 ;
+       sum = sum + x * y;
+       x = x * 10;
+       n = (n - y) / 2;
+   }
+    string s = "sum";
+    return s;   
+}
+
+void print_bulb(int bit)
+{
+    if (bit == 0)
+    {
+        // Dark emoji
+        printf("\U000026AB");
+    }
+    else if (bit == 1)
+    {
+        // Light emoji
+        printf("\U0001F7E1");
+    }
+}
