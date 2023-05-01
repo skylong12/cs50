@@ -13,7 +13,7 @@ int main(void)
          decimal[i] = text[i];
          string binary = tobinary(decimal[i]); //把字符的十进制ascii码转为二进制字符串
          
-         for(int i  = strlen(binary); i < 8; i++)
+         for(int k = strlen(binary); k < 8; k++)
          {
               print_bulb(0);
          }
