@@ -18,7 +18,7 @@ int main(void)
                   int x = a[i] % 2;
                   yushu[7 - j] = x;
                   a[i] = (a[i] - x) / 2;
-                  print_bulb(yushu[i]);
+                  print_bulb(yushu[j]);
           }
           printf("\n");
      }
